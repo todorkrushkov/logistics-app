@@ -1,0 +1,111 @@
+{
+  "locations" : [ {
+    "id" : 1,
+    "city" : "SYD"
+  }, {
+    "id" : 2,
+    "city" : "MEL"
+  }, {
+    "id" : 3,
+    "city" : "ADL"
+  }, {
+    "id" : 4,
+    "city" : "ASP"
+  }, {
+    "id" : 5,
+    "city" : "BRI"
+  }, {
+    "id" : 6,
+    "city" : "DAR"
+  }, {
+    "id" : 7,
+    "city" : "PER"
+  } ],
+  "trucks" : [ {
+    "id" : 1001,
+    "model" : "Scania",
+    "capacity" : 42000.0,
+    "currentLoad" : 0.0,
+    "range" : 8000,
+    "deliveryPackageIds" : [ ]
+  } ],
+  "routes" : [ {
+    "id" : 101,
+    "routeStops" : [ 1, 2, 3 ],
+    "scheduleMap" : {
+      "1" : "2025-07-14",
+      "2" : "2025-07-15",
+      "3" : "2025-07-16"
+    }
+  }, {
+    "id" : 102,
+    "routeStops" : [ 1, 5, 6, 3 ],
+    "scheduleMap" : {
+      "1" : "2025-07-14",
+      "5" : "2025-07-15",
+      "6" : "2025-07-16",
+      "3" : "2025-07-17"
+    }
+  }, {
+    "id" : 103,
+    "routeStops" : [ 4, 5, 6, 7 ],
+    "scheduleMap" : {
+      "4" : "2025-07-14",
+      "5" : "2025-07-15",
+      "6" : "2025-07-16",
+      "7" : "2025-07-17"
+    }
+  }, {
+    "id" : 104,
+    "routeStops" : [ 2, 3, 4 ],
+    "scheduleMap" : {
+      "2" : "2025-07-14",
+      "3" : "2025-07-15",
+      "4" : "2025-07-16"
+    }
+  } ],
+  "packages" : [ {
+    "id" : 100001,
+    "weight" : 150.0,
+    "startLocationId" : 1,
+    "endLocationId" : 2,
+    "senderId" : 10001,
+    "receiverId" : 10002,
+    "state" : "DELIVERED"
+  } ],
+  "customers" : [ {
+    "id" : 10001,
+    "firstName" : "Ivelin",
+    "lastName" : "Yanev",
+    "phoneNum" : "0892205566",
+    "packageIds" : [ 100001 ]
+  }, {
+    "id" : 10002,
+    "firstName" : "Dancho",
+    "lastName" : "Yordanov",
+    "phoneNum" : "0889088908",
+    "packageIds" : [ 100001 ]
+  }, {
+    "id" : 10003,
+    "firstName" : "Kiril",
+    "lastName" : "Popov",
+    "phoneNum" : "0798892234",
+    "packageIds" : [ ]
+  }, {
+    "id" : 10004,
+    "firstName" : "Kaloyan",
+    "lastName" : "Kostov",
+    "phoneNum" : "0980234433",
+    "packageIds" : [ ]
+  }, {
+    "id" : 10005,
+    "firstName" : "Jenya",
+    "lastName" : "Koicheva",
+    "phoneNum" : "0899972409",
+    "packageIds" : [ ]
+  } ],
+  "truckRoutes" : [ {
+    "truckId" : 1001,
+    "routeId" : 101
+  } ]
+}
