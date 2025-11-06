@@ -143,5 +143,5 @@ Please adhere to this project's `code of conduct`.
 
 ## Feedback
 
-If you have any feedback, please reach out to us at ivelinyanev00@gmail.com
+If you have any feedback, please reach out to us at todorkrushkov.work@gmail.com
 
